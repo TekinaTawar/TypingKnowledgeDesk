@@ -8,19 +8,19 @@
   /* border: solid black 1px; */
 }
 
-body {
+.header {
   font-family: "Poppins", sans-serif;
   background: white;
   color: #000;
   font-size: 18px;
 }
 
-a {
+.header a {
   color: #262626;
   text-decoration: none;
 }
 
-ul {
+.header ul {
   list-style: none;
 }
 
@@ -28,7 +28,7 @@ ul {
   background-color: #333333;
 }
 
-.header {
+.sec1 {
   display: flex;
   color: white;
   align-items: center;
@@ -38,17 +38,17 @@ ul {
   max-width: 1200px;
   margin: auto;
 }
-.header .logo {
+.sec1 .logo {
   width: 80px;
 }
-.header .logoText {
+.sec1 .logoText {
   flex: 1;
   font-family: "Lobster", cursive;
   font-size: 30px;
   color: #ffd741;
 }
 
-.header ul {
+.sec1 ul {
   display: flex;
   justify-content: space-between;
   width: 120px;
@@ -82,7 +82,7 @@ ul {
   background-color: #478ac9;
   box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.3);
   display: none;
-  z-index: 999;
+  z-index: 20000;
 }
 
 .menuLv1 > li:hover .menuLv2 {
@@ -98,7 +98,7 @@ ul {
   background-color: #387cbd;
 }
 
-.menuLv2 * {
+.menuLv2 li>a {
   color: white;
 }
 
