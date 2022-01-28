@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  /* border: solid black 1px; */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: white;
+  color: #000;
+  font-size: 18px;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.headerContainer {
+  background-color: #333333;
+}
+
+.header {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.header .logo {
+  width: 80px;
+}
+.header .logoText {
+  flex: 1;
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+  color: #ffd741;
+}
+
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+/* mainnav */
+.mainnav {
+  background-color: #fff;
+}
+
+.mainnav .menuLv1 {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  font-weight: 500;
+}
+
+.mainnav .menuLv1 > li {
+  position: relative;
+}
+.menuLv2 {
+  position: absolute;
+  /* top: 3rem; */
+  left: -15px;
+  background-color: #478ac9;
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 999;
+}
+
+.menuLv1 > li:hover .menuLv2 {
+  display: block;
+}
+
+.menuLv2 li {
+  padding-bottom: 10px;
+  padding: 15px;
+}
+
+.menuLv2 li:hover {
+  background-color: #387cbd;
+}
+
+.menuLv2 * {
+  color: white;
+}
+
+.herobox {
+  margin: auto;
+  width: 80%;
+  max-width: 1300px;
+  height: 740px;
+  background-color: white;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.tutor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100px;
+}
+
+.herobox2 {
+  margin: auto;
+  width: 100%;
+  /* max-width: 1300px; */
+  height: 1100px;
+  background-color: black;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.multiplayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -150px;
+}
+
+.footer {
+  background-color: #333333;
+  color: white;
+  height: 130px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
